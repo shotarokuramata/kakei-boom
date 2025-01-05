@@ -18,3 +18,10 @@ model users {
   image     String
   createdAt DateTime @default(now())
 }
+
+model expense {
+  id        Int      @id @default(autoincrement())
+  name      String
+  type      String
+  createdAt DateTime @default(now())
+}
